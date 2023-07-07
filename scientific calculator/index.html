@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci calci</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+            integrity=
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+      </script>
+</head> 
+<body>
+    
+        <div class="container">
+            <div class="display">
+                <input id="display" type="text">
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ce" onclick="backSpace()">⌫</button>
+                    <button class="btn" value="^" value="^" onclick="power()">^</button>
+                    <button class="btn" value="("onclick="display.value+='('">(</button>
+                    <button class="btn"value=")" onclick="display.value+=')'">)</button>
+                    <button class="btn"value="%"onclick="display.value+='%'">%</button>
+                    <button id="ac" onclick="clrscr()">AC</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" value="sin(" onclick="display.value += 'sin('">sin(</button>
+                    <button class="btn" value="PI" onclick="PI()">π</button>
+                    <button class="btn" value="7" onclick="display.value+='7'">7</button>
+                    <button class="btn"value="8" onclick="display.value+='8'">8</button>
+                    <button class="btn"value="9" onclick="display.value+='9'">9</button>
+                    <button class="btn"value="/" onclick="display.value+='/'">÷</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" value="cos(" onclick="display.value+='cos('">cos(</button>
+                    <button class="btn" value="log(" onclick="display.value+='log('">log(</button>
+                    <button class="btn"value="4" onclick="display.value+='4'">4</button>
+                    <button class="btn"value="5" onclick="display.value+='5'">5</button>
+                    <button class="btn"value="6" onclick="display.value+='6'">6</button>
+                    <button class="btn"value="*" onclick="display.value+='*'">x</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" value="tan(" onclick="display.value+='tan('">tan(</button>
+                    <button class="btn" value=" √" onclick="sqrt()"> √</button>
+                    <button class="btn"value="1" onclick="display.value+='1'">1</button>
+                    <button class="btn"value="2" onclick="display.value+='2'">2</button>
+                    <button class="btn"value="3" onclick="display.value+='3'">3</button>
+                    <button class="btn"value="-" onclick="display.value+='-'">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn" value="e" onclick="e()">e</button>
+                    <button class="btn"value="x">x <span style="position: relative; bottom: .4em; right: .1em;">y</span> </button>
+                    <button class="btn"value="0" onclick="display.value+='0'">0</button>
+                    <button class="btn" value="." onclick="display.value+='.'">.</button>
+                    <button id="eval" onclick="cal()">=</button>
+                    <button class="btn"value="+" onclick="display.value+='+'">+</button>
+                </div>
+            </div>
+        </div>
+     
+       <script src="script.js"></script>
+</body>   
+</html>
